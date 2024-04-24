@@ -15,8 +15,11 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
           cache: 'yarn'
+
+      - uses: Homebrew/actions/setup-homebrew@master
+        id: set-up-homebrew
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
@@ -50,8 +53,11 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
           cache: 'yarn'
+
+      - uses: Homebrew/actions/setup-homebrew@master
+        id: set-up-homebrew
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
