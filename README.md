@@ -41,7 +41,7 @@ const lambdaSAM = await generateAPISAM({
     first: {
       filename: 'lambda.zip',
       handler: 'handler.handler',
-      runtime: 'nodejs16.x',
+      runtime: 'nodejs20.x',
       route: '/test',
       method: 'get',
     },
