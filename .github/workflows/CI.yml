@@ -43,6 +43,9 @@ jobs:
       AWS_SECRET_ACCESS_KEY: 4Xt3Rbx4DO21MhK1IHXZXRvVRDuqaQ0Wo5lILA/h
 
     steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+        id: set-up-homebrew
+
       - name: Setup AWS SAM
         run: |
           brew tap aws/tap
@@ -55,9 +58,6 @@ jobs:
         with:
           node-version: '20'
           cache: 'yarn'
-
-      - uses: Homebrew/actions/setup-homebrew@master
-        id: set-up-homebrew
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
