@@ -27,7 +27,7 @@ const LambdaFunctionName = 'proxy';
 interface Props {
   pathToProxyPackage: string;
   proxyConfig: string;
-  runtime?: 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x';
+  runtime?: 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x' | 'nodejs18.x' | 'nodejs20.x';
   onData?: (data: any) => void;
   onError?: (data: any) => void;
   cliOptions?: SAMLocalLambadCLIOptions;
