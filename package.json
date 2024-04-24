@@ -1,11 +1,11 @@
 {
-  "name": "@millihq/sammy",
-  "version": "3.0.0",
+  "name": "@carneirofc/sammy",
+  "version": "3.1.0",
   "main": "dist/index.js",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/milliHQ/sammy.git"
+    "url": "https://github.com/carneirofc/sammy.git"
   },
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
